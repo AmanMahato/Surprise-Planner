@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+	
+	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.5/waves.min.css">
+	<link rel="stylesheet" type="text/css" href="css/nativedroid.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+	<script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/additional-methods.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.5/waves.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="js/nativedroid.js"></script>
+	
+
+	<style type="text/css">
+	input.error {
+		border-bottom: 1px solid red;
+	}
+
+	h1.title {
+		text-align: center !important;
+	}
+	</style>
+</head>
+<body>	
+	<!-- SIGNUP PAGE -->
+	<div id="signup" data-role="page" data-title="Register">
+  		<div data-role="header">
+  			<h1 class="title">Surprise Planner</h1>
+				<div data-role="navbar">
+			    <ul>
+			    	<li><a href="#signup" class="ui-btn-active ui-state-persist"  data-transition="slide">Sign Up</a></li>
+			        <li><a href="#login"  data-transition="slide">Log In</a></li>
+			    </ul>
+				</div>
+		</div>
+
+		<div role="main" class="ui-content">
+	      	<div id="signup-form">   
+	          <h2>Sign Up for an Adventure</h2> 
+	          <form method="post" id="r-form">		          
+	          	<div data-role="fieldcontainer">
+	          		<input id="firstname" name="firstname" type="text" required autocomplete="off" placeholder="First Name"/>
+	          	</div>
+	            
+	            <div data-role="fieldcontainer">
+	            	<input id="lastname" name="lastname" type="text"required autocomplete="off" placeholder="Last Name"/>
+	            </div>
+	            
+	            <div data-role="fieldcontainer">
+	            	<input id="r-username" name="username" type="text"required autocomplete="off" placeholder="Username"/>
+	            </div>
+	            
+	            <div data-role="fieldcontainer">
+	            	<input id="email" name="email" type="email" required autocomplete="off" placeholder="Email Address"/>
+	            </div>
+	            
+	            <div data-role="fieldcontainer">
+	            	<input id="telephone" name="telephone" type="tel" required autocomplete="off" placeholder="Mobile Number"/>
+	            </div>
+	            
+	            <div data-role="fieldcontainer">
+	            	<input id="r-password" name="password" type="password" required autocomplete="off" placeholder="Password"/>
+	           	</div>
+	           	
+	           	<div class="ui-input-btn ui-btn ui-btn-raised clr-primary ui-corner-all ui-shadow">Get Started
+	         	  	<input type="submit" data-enhanced="true" id="signup-submit" value="Input value">
+			    </div>
+	          </form>
+		    </div>		    
+    	</div><!-- ui-content -->  
+    	
+    	<div data-role="footer">
+    		<p style="text-align:center">
+    			Built by Team 2. <br>
+    			Narasimman  . Niharika . Charles . Colin . Aman
+    		</p>
+
+    	</div>    
+	</div> 
+	<!-- SIGNUP PAGE -->
+
+	<!-- LOGIN PAGE  -->
+	<div id="login" data-role="page" data-title="login">
+  		<div data-role="header">
+  			<h1 class="title">Surprise Planner</h1>
+  			<div data-role="navbar">
+			    <ul>
+			    	<li><a href="#signup" data-transition="slide" data-direction="reverse">Sign Up</a></li>
+			        <li><a href="#login" class="ui-btn-active ui-state-persist" data-transition="slide">Log In</a></li>
+			    </ul>
+			</div>
+			
+		</div>
+
+		<div role="main" class="ui-content">			
+	      	<div id="login-form">   
+	          <h2>Login to plan your Adventure</h2>
+	          <form method="post" id="l-form">	
+	          	<div data-role="fieldcontainer">	          
+	          		<input name="username" id="l-username" type="text" required autocomplete="off" placeholder="Username"/>
+	            </div>
+	            
+	            <div data-role="fieldcontainer">
+	            	<input name="password" id="l-password" type="password" required autocomplete="off" placeholder="Password"/>
+	          	</div>
+	          	<div class="ui-input-btn ui-btn ui-btn-raised clr-primary ui-corner-all ui-shadow">Login
+	         	  	<input type="submit" data-enhanced="true" id="login-submit" value="Input value">
+			    </div>
+	          </form>
+		    </div>		    
+    	</div><!-- ui-content -->  
+    	
+    	<div data-role="footer">
+    		<p style="text-align:center">
+    			Built by Team 2. <br>
+    			Narasimman  . Niharika . Charles . Colin . Aman
+    		</p>
+
+    	</div>    
+	</div>
+	<!-- LOGIN PAGE  -->
+
+	<!-- Home page -->
+	<div id="home" data-role="page" data-title="Home">
+  		<div data-role="header">
+  			<h1 class="title">Surprise Planner</h1>
+		</div>
+
+		<div role="main" class="ui-content">
+		    <h2>Ready for an adventure?</h2>
+			<div style="margin:15px;"><a href="#plan" data-transition="slide" class="ui-btn ui-btn-raised clr-primary">Plan</a></div>
+			<div style="margin:15px;"><a href="#order" data-transition="slide" class="ui-btn ui-btn-raised clr-primary">View your orders</a></div>
+    	</div><!-- ui-content -->  
+    	
+    	<div data-role="footer">
+    		<p style="text-align:center">
+    			Built by Team 2. <br>
+    			Narasimman . Niharika . Charles . Colin . Aman
+    		</p>
+
+    	</div>    
+	</div>
+	<!-- HOME PAGE  -->
+
+	<!-- PLAN PAGE  -->
+	<div id="plan" data-role="page" data-title="Plan">
+  		<div data-role="header">
+  			<h1 class="title">Surprise Planner</h1>
+		</div>
+
+		<div role="main" class="ui-content">
+		    <div id="plan-form">   
+	          <h2>Plan Your Adventure</h2>
+	          <form method="post" id="p-form">
+	          	<div data-role="fieldcontainer">
+	          		<label for="startTime">Start Time <span class="required">*</span></label>
+					<input id="p-starttime" type="date" name="startTime"  required/>
+				</div>
+				
+				<div data-role="fieldcontainer">
+					<label for="endTime">End Time <span class="required">*</span></label>
+					<input id="p-endtime" type="date" name="endTime"  required/>
+				</div>
+
+	          	<div data-role="fieldcontainer">
+	          		<label for="budget">Budget<span class="required">*</span></label>
+	          		<input id="p-budget" type="number" name="budget"  required/>
+				</div>
+				
+				<div data-role="fieldcontainer">
+					<label for="location">ZIP Code <span class="required">*</span></label>
+					<input id="p-location" type="number" name="location"  required/>
+				</div>
+				
+				<div data-role="fieldcontainer">
+					<label for="preference">Preference <span class="required">*</span></label>
+					<input id="p-pref" type="text" placeholder="indian" name="preference"  required/>
+				</div>
+				<div class="ui-input-btn ui-btn ui-btn-raised clr-primary ui-corner-all ui-shadow">Surprise Me!
+	         	  	<input type="submit" data-enhanced="true" id="plan-submit" value="Plan">
+			    </div>				
+
+	          </form>
+		    </div>		    
+    	</div><!-- ui-content -->  
+    	
+    	<div data-role="footer">
+    		<p style="text-align:center">
+    			Built by Team 2. <br>
+    			Narasimman . Niharika . Charles . Colin . Aman
+    		</p>
+
+    	</div>    
+	</div>
+	<!-- PLAN PAGE  -->
+
+	<!-- CONFIRMATION PAGE  -->
+	<div id="confirm" data-role="page" data-title="Confirmation">
+  		<div data-role="header">
+  			<h1 class="title">Surprise Planner</h1>
+		</div>
+
+		<div role="main" class="ui-content">
+		    <div id="comfirm">   
+	          <h2>Your Plan is Scheduled. Go for an adventure!</h2>
+
+	          <div>
+	          	<a href="#order" data-transition="slide" class="ui-input-btn ui-btn ui-btn-raised clr-primary ui-corner-all ui-shadow"> view your orders </a>
+	          </div>
+		    </div>		    
+    	</div><!-- ui-content -->  
+    	
+    	<div data-role="footer">
+    		<p style="text-align:center">
+    			Built by Team 2. <br>
+    			Narasimman . Niharika . Charles . Colin . Aman
+    		</p>
+
+    	</div>    
+	</div>
+	<!-- CONFIRM PAGE  -->
+
+	<!-- Orders PAGE  -->
+	<div id="order" data-role="page" data-title="Confirmation">
+  		<div data-role="header">
+  			<h1 class="title">Surprise Planner</h1>
+		</div>
+
+		<div role="main" class="ui-content">
+		    <div id="ordersdiv">   
+	          <h2>Your orders</h2>
+
+	          <div id="orderslist">
+	          	<ul id="orders" data-role="listview" data-inset="true"></ul>
+	          </div>
+
+	          	<a href="#plan" data-transition="slide" class="ui-input-btn ui-btn ui-btn-raised clr-primary ui-corner-all ui-shadow"> Plan </a>
+	          </div>
+		    </div>		    
+    	</div><!-- ui-content -->  
+    	
+    	<div data-role="footer">
+    		<p style="text-align:center">
+    			Built by Team 2. <br>
+    			Narasimman . Niharika . Charles . Colin . Aman
+    		</p>
+
+    	</div>    
+	</div>
+	<!-- CONFIRM PAGE  -->
+
+
+	<script type="text/javascript">
+
+		$( document ).bind( "mobileinit", function() {
+   			$.mobile.allowCrossDomainPages = true;
+   			$.support.cors = true;
+		});
+
+		$(function() {
+			var fetch = function(url, formid, nextpageid) {		
+				$.ajax({url: 'http://websys3.stern.nyu.edu:7002/' + url,
+	            	data: $('#' + formid).serialize(),
+	            	type: 'post',                   
+	            	async: 'true',
+	                dataType: 'json',
+	                xhrFields: {
+						  withCredentials: true
+						},
+	            	beforeSend: function() {
+	                	$.mobile.loading('show'); 
+	            	},
+	            
+	            	complete: function() {
+	                	//$.mobile.loading('hide');
+	            	},
+	            	
+	            	success: function (result) {
+	            		$.mobile.loading('hide');
+	                    if(result.status && result.status == "success") {
+	                        $.mobile.changePage("#" + nextpageid);                         
+	                    } else if(result.status == "failure") {
+	                        show_error_message(result.message, 4000); 
+	                    }
+	            	},
+	            
+	            	error: function (request,error) {
+	                	show_error_message('Network error has occurred please try again!' + error, 4000);
+	            	}
+	        	});
+			};
+
+			var show_error_message = function(message, delay) {
+				$.mobile.loading('hide');
+			    $.mobile.loading('show',
+					{ 
+						theme: "e", 
+						text: (message || 'ERROR'),
+			        	textonly: true, 
+			        	textVisible: true 
+			        });
+			    	
+			    	setTimeout(function() {
+			        	$.mobile.loading('hide');
+			    	}, ((delay && delay > 0) ? delay : 5000));
+			}
+
+			$.validator.setDefaults({
+				errorPlacement: function(error, element) { }
+			});
+			$("#l-form").validate({
+				submitHandler : function() {				
+                    fetch('login', 'l-form', 'home');
+                }
+			});
+
+			$("#r-form").validate({
+				submitHandler : function() {				
+                    fetch('register', 'r-form', 'login');
+                }
+			});
+
+			$("#p-form").validate({
+				submitHandler : function() {				
+                    fetch('plan', 'p-form', 'confirm'); 
+                }
+			});
+
+			$(document).on('pagebeforeshow', '#order', function(){  
+				$.ajax({url: 'http://websys3.stern.nyu.edu:7002/orders',	            	
+	            	type: 'get',
+	            	async: 'true',
+	                dataType: 'json',
+	                xhrFields: {
+						  withCredentials: true
+						},
+	            	
+	            	success: function (result) {
+	                    if(result.status && result.status == "success") {
+	                    	$('#orders').html("")	                    	
+	                        $.each(result.data, function(i, value) {
+	                        	var vals = value.split("::");
+
+	                        	$('#orders').append('<li><a href="#"> <p>Yelp :' + vals[0] + '</p>\
+	                        		<p>Event :' + vals[1] + '</p></a></li>');
+	                        });
+	                        $('#orders').listview('refresh');
+	                        
+	                    } else if(result.status == "failure") {
+	                        show_error_message(result.message, 4000); 
+	                    }
+	            	},
+	            
+	            	error: function (request,error) {
+	                	show_error_message('Network error has occurred please try again!' + error, 4000);
+	            	}
+	        	});
+
+			});
+
+		});
+		
+		
+
+	</script>
+
+ 	<!--<script type="text/javascript" src="cordova.js"></script>-->
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+
+</body>
+</html>
